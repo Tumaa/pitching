@@ -26,7 +26,7 @@ class ProdConfig(Config):
     pass
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://tumaa:1234567@localhost/pitch_test'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://fatuma:qwerty12@localhost/tumaa'
 
 class DevConfig(Config):
     '''
@@ -36,7 +36,7 @@ class DevConfig(Config):
         Config: The parent configuration class with General configuration settings
 
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://tumaa:1234567@localhost/pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://fatuma:qwerty12@localhost/tuma'
     DEBUG = True
 
 config_options = {
