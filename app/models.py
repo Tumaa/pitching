@@ -79,4 +79,3 @@ class Comments(db.Model):
     def get_comments(cls,pitch):
         comments = Comments.query.filter_by(pitch_id=pitch).all()
         return comments
-s
