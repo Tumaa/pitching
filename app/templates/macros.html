@@ -4,7 +4,8 @@
         <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 panel bg">
             <p>{{ pitch_content }}</p>
             <li class="text-center">
-                <a href="/pitch/{{pitch.id}}">Go to pitch</a>
+                <a href="/pitch/{{pitch.id}}"><button type="button" class="btn btn-success">See Pitch</button>
+</a>
             </li>
             <p class="text-center">-{{pitch.pitch_content}}</p>
             <h5 class="text-center">Posted by: {{pitch.user.username}}</h5>

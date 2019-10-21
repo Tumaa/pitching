@@ -7,14 +7,16 @@
     <div class="row">
         <p>{{pitch.pitch_content}}</p>
         <span>
-        <p>Posted on {{date}} by {{pitch.user.username| capitalize}}</p>
+        <p>Posted on {{date}}<br>
+        by {{pitch.user.username| capitalize}}</p>
         <a href="/pitch/{{pitch.id}}?upvote=1">
         <i class="material-icons"></i>
-            <i class="material-icons">thumb_up</i>
+            <i class="material-icons"><button type="button" class="btn btn-primary">Like</button></i>
         </a>{{pitch.upvotes}} <a href="/pitch/{{pitch.id}}?downvote=1">
-            <i class="material-icons">thumb_down</i>
-        </a>{{pitch.downvotes}}</span>
-         <a class="ratings" href="/pitch/new/"> Write a new pitch</a>
+            <i class="material-icons"><button type="button" class="btn btn-primary">Dislike</button></i>
+        </a>{{pitch.downvotes}}</span> <br>
+                 <a class="ratings"  style='margin-left: 2%;, margin-top: 2%;' href="/pitch/new/"><button type="button" class="btn btn-primary">Add Pitch</button></a>
+
     </div>
     <div class="row">
         <hr>
