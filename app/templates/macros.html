@@ -1,13 +1,5 @@
-<style>
-#homeone{
-    background-image: url('https://images.pexels.com/photos/1899631/pexels-photo-1899631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); 
-    background-size: cover;
-    background-position: center
-}
-</style>
-
 {% macro displayPitchesList(pitch_list) %}
-<div class="card-group" id='homeone'>
+<div class="card-group" id='homeone' style='color: red;'>
  {% for pitch in pitch_list %}
   <div class="card mb-4">
     <div class="card-body">
