@@ -1,18 +1,32 @@
 {% macro displayPitchesList(pitch_list) %}
 
-    {% for pitch in pitch_list %}
-        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 panel bg">
-            <p>{{ pitch_content }}</p>
-            <li class="text-center">
-                <a href="/pitch/{{pitch.id}}"><button type="button" class="btn btn-success">See Pitch</button>
-</a>
-            </li>
-            <p class="text-center">-{{pitch.pitch_content}}</p>
-            <h5 class="text-center">Posted by: {{pitch.user.username}}</h5>
+
+  <section class="text-center mb-4">
+    <div class="row">
+ {% for pitch in pitch_list %}
+        <div class="card col-lg-3 col-md-6 mb-4"> 
+           
+          </div>
+          <div class="card-body text-center">
+            </a>
+            <h5>
+              <strong>{{pitch.pitch_content}} </strong>
+
+            </h5>
+            <hr style='width: 25%;'>
+            <h4 class="font-weight-bold default-text">
+              <span>Posted by:{{pitch.user.username}}
+              </span>
+            </h4>
+                <a href="/pitch/{{pitch.id}}"><button type="button" class="btn btn-success">See Pitch</button></div>
+
+
+          </div>
         </div>
-
-    {% endfor %}
-
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 {% endmacro %}
 
 {% macro displayComments(comments_list) %}
