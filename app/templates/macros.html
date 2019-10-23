@@ -1,21 +1,17 @@
 {% macro displayPitchesList(pitch_list) %}
-<div class="card-group" id='homeone' style='text-align: center; border: 3px dotted blue; width: 45%; height: 25%; margin-left: 25%; background-image: url('https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280');'>
- {% for pitch in pitch_list %}
-  <div class="card mb-4">
-    <div class="card-body">
-      <p class="card-text"><strong>{{pitch.pitch_content}} </strong></p>
-            <h6 class="card-title">Posted by:{{pitch.user.username}}</h6>
+    {% for pitch in pitch_list %}
+        <div class="come" style='margin-left: 20%; margin-top: 0px;'>
+            <p>{{ pitch_content }}</p>
+           
+            <p class="text-center" style='font-size: 5vh;'>{{pitch.pitch_content}}</p>
+            <h5 class="text-center">Posted by: {{pitch.user.username}}</h5>
+             <div class="text-center">
+            <button mdbBtn type="button" gradient="purple" size="sm" mdbWavesEffect><a href="/pitch/{{pitch.id}}">Go to pitch</a></button>
 
-<a href="/pitch/{{pitch.id}}"><button type="button" class="btn btn-primary btn-md">Read more</button>
-
-    </div>
-    <!-- Card content -->
-
-  </div>
-      {% endfor %}
-    </div>
+            </div>
+        </div>
+    {% endfor %}
 {% endmacro %}
-
 {% macro displayComments(comments_list) %}
     {% for comment in comments_list %}
         <div class="col-md-12">
@@ -24,3 +20,7 @@
         </div>
     {% endfor %}
 {% endmacro %}
+Collapse
+
+
+
