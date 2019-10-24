@@ -1,6 +1,5 @@
-# Pitch it
+# Pitching
 #### Created by Tumaa
-### current Version 1.0 6/30/2019
 ## Description
 This in an application that allows users will submit their one minute pitches and users can comment, like and give feedback
 ## Setup/Installation Requirements
