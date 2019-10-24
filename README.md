@@ -24,7 +24,5 @@ contact me through ramanfatuu@gmail.com
 ## License
 LICENSE(https://github.com/tumaa/pitching/blob/master/LICENSE)
 
-Website
+## Website livesite
 https://afternoon-fortress-25872.herokuapp.com/Language
-Python
-<https://github.com/tumaa/pitching|tumaa/pitching
