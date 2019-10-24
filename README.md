@@ -1,5 +1,6 @@
 
-## Pitches It is a web application that is meant for users to add pitches on 7 different categories
+## Pitching
+It is a web application that is meant for users to add pitches on 7 different categories
 ### May 18th, 2018
 
 ## Description
@@ -36,7 +37,7 @@ Install dependancies that will create an environment for the app to run
 
 ### Prepare environment variables
 ```bash
-export DATABASE_URL='postgresql+psycopg2://username:password@localhost/eren'
+export DATABASE_URL='postgresql+psycopg2://username:password@localhost/tuma00'
 export SECRET_KEY='Your secret key'
 ```
 
@@ -65,7 +66,7 @@ SQLAlchemy errors, automatic sign out has a short time span
     - Postgresql
 
 ## Support and contact details
-Contact me on ododovincent54@gmail.com for any comments, reviews or advice.
+Contact me on ramanfatuu@gmail.com for any comments, reviews or advice.
 
 ### License
-Copyright (c) **Vincent Ododo**
+Copyright (c) **tumaa**
