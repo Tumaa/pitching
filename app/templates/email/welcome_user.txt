@@ -1,4 +1,4 @@
 Hello {{user.username}}
-Welcome to Oneminute pitch
+Welcome to pitching
 We have just seen you have signed up for our application and want to welcome you to the challenge of one minute pitch
-for more information please contact asumanibrighton@gmail.com
+for more information please contact developersjuniors@gmail.com
