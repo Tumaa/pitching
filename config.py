@@ -2,6 +2,7 @@ import os
 
 class Config:
     SECRET_KEY = '123456'
+    UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://fatuma:qwerty12@localhost/pitch'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     SIMPLEMDE_JS_IIFE = True
@@ -25,6 +26,8 @@ class ProdConfig(Config):
         Config: The parent configuration class with General configuration settings
     '''
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://fatuma:qwerty12@localhost/tuma00'
+
 
 class TestConfig(Config):
    '''
