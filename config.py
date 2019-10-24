@@ -27,8 +27,8 @@ class ProdConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    # SQLALCHEMY_DATABASE_URI = 'ppostgresql+psycopg2://fatma:qwerty123456@localhost/fatumaa'
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://fatma:qwerty123456@localhost/fatumaa'
+    # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'ppostgresql+psycopg2://fatma:qwerty123456@localhost/tuma_test'
@@ -41,9 +41,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://fatma:qwerty123456@localhost/fatumaa'
-
-    DEBUG = True
+ 
 
 config_options = {
 'development':DevConfig,
