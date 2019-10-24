@@ -23,7 +23,8 @@ def create_app(config_name):
 
     # creating app configurations
     app.config.from_object(config_options[config_name])
-    app.config['SECRET_KEY'] = 'emojis'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['SECRET_KEY'] = '123456'
     app.config['PERMANENT_SESSION_LIFETIME'] =  timedelta(minutes=1)
 
     # configure UploadSet
