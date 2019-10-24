@@ -12,7 +12,6 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-
     # Getting pitches from the different categories
     interview_pitches = Pitch.get_pitches('interview')
     product_pitches = Pitch.get_pitches('product')
