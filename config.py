@@ -18,12 +18,14 @@ class Config:
 class ProdConfig(Config):
     SECRET_KEY = os.environ.get("SECRET_KEY")
     SQLALCHEMY_DATABASE_URI =os.environ.get('DATABASE_URL')
-
-
-class DevConfig(Config):
-    SECRET_KEY='absc'
     SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://fatuma:123456kenya@localhost/yumna00'
     DEBUG = True
+
+class DevConfig(Config):
+    SECRET_KEY='12345'
+    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://fatuma:123456kenya@localhost/yumna00'
+    DEBUG = True
+    pass
 
 config_options = {
 'development':DevConfig,
