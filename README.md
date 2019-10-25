@@ -1,60 +1,65 @@
-# Pitches
+# Pitching
 
 ## Description
-This is a web application that allows users to sign up, log in ad post pitches which other users can ccomment on, upvote or downvote. They can choose which category to write a pitch in and can view and comment on other users' pitches.
+This is an application that enables a user to post pitches and view other users' pitches. A user can log in to the application using their credentials, post comments and leave remarks on other people's pitches.
+### By tumaa
 
-### By: ANTONY MWANIKI
+## Setup/Installation Requirements
 
-## Prerequisites
-1. python3.6
-2. pip
-3. Virtual environment(virtualenv)
+### Prerequisites
+* python3.6
+* pip
+* Virtual environment(virtualenv)
+* Flask-Mail
+* PostgreSQL
 
 ## Cloning and running
 Clone the application using git clone(this copies the app onto your device). In your terminal:
 
-    $ git clone https://github.com/amwaniki/pitches.git
-    $ cd pitches
-    
-Creating the virtual environment
+  ```  $ git clone https://github.com/tumaa/pitching/```
+  
+  ```  $ cd pitch-perfect```
 
-    $ python3.6 -m venv --without-pip virtual
-    $ source virtual/bin/env
-    $ curl https://bootstrap.pypa.io/get-pip.py | python
-    
-Installing Flask and other Modules
+## Creating the virtual environment
 
-    $ python3.6 -m pip install Flask
-    $ python3.6 -m pip install Flask-Bootstrap
-    $ python3.6 -m pip install Flask-Script
-    
-Run the application:
+  ```  $ python3.6 -m venv --without-pip virtual```
+  
+  ```  $ source virtual/bin/env```
+  
+  ```  $ curl https://bootstrap.pypa.io/get-pip.py | python```
 
-    $ chmod a+x start.sh
-    $ ./start.sh
-    
-Testing the Application
+## Installing Flask and other Modules
+
+  ```  $ python3.6 -m pip install Flask```
+  
+  ```  $ python3.6 -m pip install Flask-Bootstrap```
+  
+  ```  $ python3.6 -m pip install Flask-Script```
+  
+  ```  $ python3.6 -m pip install Flask-Mail```
+
+
+## Testing the Application
 To run the tests for the class files:
 
-    $ python3.6 manage.py test
-    
+  ```  $ python3.6 manage.py test```
+
 ## Technologies Used
-1. Python 3.6
-2. Flask
+* Python 3.6
+* Flask
 
-## BDD
-|Behaviour	             | Input	                         | Output                                                |
-|------------------------|---------------------------------|-------------------------------------------------------|
-|View Categories	       | Click on category               | A list of pitches in that category is displayed       |
-|Add a new pitch         | click on pitch                  | Authentification page is displayed and user can pitch |
-|Add a comment           | Click on comment                | Comment form is displayed and user can comment        |
-|Upvote pitch            | Click on upvote                 | Pitch gets +1 upvote                                  |
-|Downvote pitch          | Click on downvote               | Pitche gets +1 downvote                               |
-
-## Contact Information
-For any questions, troubleshooting or contributions, find me on:
-Email: amwaniki180@gmail.com
+## Behaviour driven development/ Specifications
+| Behaviour    | Input     | Output|
+| :------------- | :------------- |:---------|
+|   Post pitch     |     Pitch is saved in a database | Post from database|
+|Comment on pitch|Leave a comment| Comment saved for display|
+|Upvote or downvote pitch|Click on like or dislike|Reflects on likes and dislikes|
+|Login and authenticate|Email address and password|Saved and used for authentication|
 
 
+## Support and contact details
+Feel free to reach out to the developer at:
+
+* Email: ramanfatuu@gmail.com
 ## License
-MIT License Copyright (c) {2019} ANTONY MWANIKI
+MIT License Copyright (c) {2019} Tumaa
