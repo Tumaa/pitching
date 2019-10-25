@@ -6,6 +6,7 @@ from flask_migrate import Migrate, MigrateCommand
 
 
 app =  create_app('development')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 manager = Manager(app)
 manager.add_command('server', Server)
 
