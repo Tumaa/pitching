@@ -1,6 +1,6 @@
 from flask import render_template, redirect, url_for, flash, request
 from ..models import User
-# from ..email import send_email, send_reset_email
+from ..email import send_email, send_reset_email
 from . import auth
 from flask_login import login_user, login_required, logout_user, current_user
 from .. import db
@@ -33,7 +33,7 @@ def register():
         db.session.commit()
 
         # mail_message('Welcome to Watchlist', 'email/welcome_user', user.email, user=user)
-        send_email(subject="Registration", sender="developersjuniors@gmil.com",recepients=[user.email],text_body='Test Email',html_body=render_template('500.html'))
+        send_email(subject="Registration", sender="developersjuniors@gmail.com",recepients=[user.email],text_body='Test Email',html_body=render_template('500.html'))
 
         return redirect(url_for('auth.login'))
 
