@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to Pitches
+You will get the best out here¬.

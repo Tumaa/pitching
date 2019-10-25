@@ -1,68 +1,60 @@
-
-## Pitching
-It is a web application that is meant for users to add pitches on 7 different categories
-### May 18th, 2018
+# Pitches
 
 ## Description
-The Pitch It web application is meant for users to post pitches on any of the 7 different categories. These categories are:
+This is a web application that allows users to sign up, log in ad post pitches which other users can ccomment on, upvote or downvote. They can choose which category to write a pitch in and can view and comment on other users' pitches.
 
-    1.Biography
-    2.Ideas
-    3.Inspirational
-    4.Bussiness
+### By: ANTONY MWANIKI
 
-A user can select any of the categories from the navbar to view the pitches on these categories
+## Prerequisites
+1. python3.6
+2. pip
+3. Virtual environment(virtualenv)
 
-Other users can give feedback to the pitch posts by commenting, liking or disliking the pitch. 
+## Cloning and running
+Clone the application using git clone(this copies the app onto your device). In your terminal:
+
+    $ git clone https://github.com/amwaniki/pitches.git
+    $ cd pitches
+    
+Creating the virtual environment
+
+    $ python3.6 -m venv --without-pip virtual
+    $ source virtual/bin/env
+    $ curl https://bootstrap.pypa.io/get-pip.py | python
+    
+Installing Flask and other Modules
+
+    $ python3.6 -m pip install Flask
+    $ python3.6 -m pip install Flask-Bootstrap
+    $ python3.6 -m pip install Flask-Script
+    
+Run the application:
+
+    $ chmod a+x start.sh
+    $ ./start.sh
+    
+Testing the Application
+To run the tests for the class files:
+
+    $ python3.6 manage.py test
+    
+## Technologies Used
+1. Python 3.6
+2. Flask
+
+## BDD
+|Behaviour	             | Input	                         | Output                                                |
+|------------------------|---------------------------------|-------------------------------------------------------|
+|View Categories	       | Click on category               | A list of pitches in that category is displayed       |
+|Add a new pitch         | click on pitch                  | Authentification page is displayed and user can pitch |
+|Add a comment           | Click on comment                | Comment form is displayed and user can comment        |
+|Upvote pitch            | Click on upvote                 | Pitch gets +1 upvote                                  |
+|Downvote pitch          | Click on downvote               | Pitche gets +1 downvote                               |
+
+## Contact Information
+For any questions, troubleshooting or contributions, find me on:
+Email: amwaniki180@gmail.com
 
 
-## Set-up and Installation
-
-### Prerequiites
-    - Python 3.6
-    - Ubuntu software
-### Create a Virtual Environment
-Run the following commands in the same terminal:
-`sudo apt-get install python3.6-venv`
-`python3.6 -m venv virtual`
-`source virtual/bin/activate`
-
-### Install dependancies
-Install dependancies that will create an environment for the app to run
-`pip3 install -r requirements`
-
-### Prepare environment variables
-```bash
-export DATABASE_URL='postgresql+psycopg2://username:password@localhost/tuma00'
-export SECRET_KEY='Your secret key'
-```
-
-### Run Database Migrations
-```
-python manage.py db init
-python manage.py db migrate -m "initial migration"
-python manage.py db upgrade
-```
-
-### Running the app in development
-In the same terminal type:
-`python3 manage.py server`
-
-Open the browser on `http://localhost:5000/`
-
-## Known bugs
-SQLAlchemy errors, automatic sign out has a short time span
-
-## Technologies used
-    - Python 3.6
-    - HTML
-    - Bootstrap 4
-    - JavaScript
-    - Heroku
-    - Postgresql
-
-## Support and contact details
-Contact me on ramanfatuu@gmail.com for any comments, reviews or advice.
-
-### License
-Copyright (c) **tumaa**
+## License
+MIT License Copyright (c) {2019} ANTONY MWANIKI

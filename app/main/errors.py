@@ -1,12 +1,9 @@
 from flask import render_template
 from . import main
-from .. import db
 
-@main.errorhandler(404)
-def not_found(error):
-    return render_template('404.html'),404
-
-@main.errorhandler(500)
-def internal_error(error):
-    db.session.rollback()
-    return render_template('500.html'),500
+@main.app_errorhandler(404)
+def four_ow_four(error):
+    '''
+    Function to render the 404 error page
+    '''
+    return render_template('fourowfour.html'),404
