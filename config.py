@@ -22,10 +22,10 @@ class ProdConfig(Config):
     DEBUG = True
 
 class DevConfig(Config):
-    # SECRET_KEY='12345'
-    # SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://fatuma:123456kenya@localhost/yumna00'
-    # DEBUG = True
-    # pass
+    SECRET_KEY='12345'
+    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://fatuma:123456kenya@localhost/yumna00'
+    DEBUG = True
+    pass
 
 config_options = {
 'development':DevConfig,
